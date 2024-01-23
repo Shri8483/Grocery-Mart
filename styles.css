@@ -1,0 +1,114 @@
+:root
+      {
+        --main-root:rgb(134, 123, 123);
+        --black:#1313a;
+        --bg:#b6b6e5;
+        --border:.1rem solid rgb(203, 200, 200);
+      }
+      *
+      {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: 2s linear;
+      }
+      .header
+      {
+background: var(--bg);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1.5rem 70%;
+border-bottom: var(--border);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+      }
+      html
+      {
+        font-size: 62.5%;
+        overflow: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+      }
+      html::-webkit-scrollbar
+      {
+       width: 8rem;
+      }
+      html::-webkit-scrollbar-track
+      {
+       background: transparent;
+      }
+      html::-webkit-scrollbar-thumb
+      {
+       background:#fff;
+       border-radius: 5rem;
+      }
+      body{
+        background: var(--bg);
+      }
+      
+      .header.icons.div
+      {
+        color: #e90d0d;
+        cursor: pointer;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+      }
+      .header.icons div:hover
+      {
+        color:var(--main-color);
+      }
+      #menu-btn
+      {
+        display: none;
+      }
+      .header .search-form
+      {
+        position: absolute;
+        top: 115%;
+        right: 7%;
+        background: #fff;
+        width: 50rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+      }
+      .header .search-form input
+      {
+        height: 100%;
+        width: 100%;
+        font-size: 1.6rem;
+        color: var(--black);
+        padding: 1rem;
+        text-transform: none;
+      }
+      .header .search-form label{
+        cursor: pointer;
+        font-size: 2.2rem;
+        margin-right: 1.5rem;
+        color: var(--black);
+      }
+      .header.navbar a{
+        margin: 0.1rem;
+        font-size: 1.6rem;
+        color: #fff;
+      }
+      .header.navbar a:hover
+      {
+color: var(--main-color);
+border-bottom: .1rem solid var(--main-color);
+padding-bottom: .5rem;
+
+      }
+  
+  
